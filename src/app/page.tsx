@@ -206,7 +206,7 @@ export default function Home() {
       </div>
       <div className="mt-6 text-xl leading-7 text-center text-zinc-600 w-[826px] max-md:max-w-full">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text.
+        industry. Lorem Ipsum has been the industry&apos;s standard dummy text.
       </div>
       <div className="px-5 mt-11 w-full max-w-[1422px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -293,7 +293,7 @@ export default function Home() {
       <div className="shrink-0 mt-7 bg-stone-300 h-[5px] w-[150px]" />
       <div className="mt-9 text-xl leading-7 text-center text-zinc-600 w-[826px] max-md:max-w-full">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text.
+        industry. Lorem Ipsum has been the industry&apos;s standard dummy text.
       </div>
       {/* <div className="px-5 mt-11 w-full max-w-[1422px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -513,7 +513,7 @@ export default function Home() {
               </div>
               <div className="mt-12 text-xl leading-7 text-zinc-600 max-md:mt-10 max-md:max-w-full">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text.
               </div>
               <div className="justify-center px-11 py-5 mt-16 text-base text-right text-white uppercase bg-stone-950 max-md:px-5 max-md:mt-10 max-md:ml-1.5">
