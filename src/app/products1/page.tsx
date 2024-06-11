@@ -7,7 +7,7 @@ interface ProductsPageProps {
 
 const ProductsPage = async () => {
     
-    const res = await fetch('https://fakestoreapi.com/products?limit=16');
+    const res = await fetch('https://fakestoreapi.com/products?limit=8');
     const products: Product[] = await res.json();
     const backgrounds = [
       'bg-red-100',
@@ -21,8 +21,6 @@ const ProductsPage = async () => {
       'bg-teal-100',
       'bg-indigo-100',
     ];
-  
-    
     const productsWithBackground: ProductWithBackground[] = products.map((product, index) => ({
       product,
       background: backgrounds[index % backgrounds.length],
@@ -59,40 +57,40 @@ const ProductsPage = async () => {
         <h1 className="flex w-full item-center justify-center font-bold text-3xl text-neutral-800">Products</h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {productsWithBackground.map(({ product, background }) => (
-            <div
-              key={product.id}
-              className={`flex flex-col ${background} p-4`}
-            >
-           <div className="px-5 mt-12 w-full ml-auto mr-auto justify-center items-center max-w-[1422px] max-md:mt-10 max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-              <div className="flex flex-col items-center justify-start w-full h-full transform hover:scale-105 transition-transform duration-300">
-                <div className="flex flex-col items-center pt-0 shadow-lg bg-neutral-100">
-                  <Image
-                    loading="lazy"
-                    src={product.image}
-                    alt={product.title}
-                    width={200}
-                    height={300}
-                  />
-                  <div className="flex flex-col px-7 py-5 mt-3 w-full bg-white max-md:px-5">
-                    <div className="text-sm font-semibold text-stone-950">
-                      {product.title}
-                    </div>
-                    {/* <div className="text-sm mt-2 text-stone-600">{product.description}</div> */}
-                    <div className="flex gap-2 self-center mt-3">
-                      <div className="text-lg font-semibold text-stone-950 text-opacity-50">
-                        US$ {product.price}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div key={product.id} className={`flex flex-col ${background} p-4`}>
+          <div className="px-5 mt-12 w-full ml-auto mr-auto justify-center items-center max-w-[1422px] max-md:mt-10 max-md:max-w-full">
+  <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+    <div className="flex flex-col items-center justify-start w-full h-full transform hover:scale-105 transition-transform duration-300">
+      <div className="flex flex-col items-center pt-0 shadow-lg bg-neutral-100 w-100 h-170"> {/* Fixed width for uniformity */}
+        <div className="w-full h-100 overflow-hidden"> {/* Fixed height for uniformity */}
+          <Image
+            loading="lazy"
+            src={product.image}
+            alt={product.title}
+            width={288}
+            height={256}
+            className="object-cover w-full h-full"
+          />
+        </div>
+        <div className="flex flex-col px-7 py-5 mt-3 w-full bg-white max-md:px-5">
+          <div className="text-sm font-semibold text-stone-950">
+            {product.title}
+          </div>
+          {/* <div className="text-sm mt-2 text-stone-600">{product.description}</div> */}
+          <div className="flex gap-5 self-center mt-3">
+            <div className="text-lg font-semibold text-stone-950">
+              US$ {product.price}
             </div>
           </div>
-          </div>
-          ))}
         </div>
       </div>
+    </div>
+  </div>
+</div>
+ </div>
+ ))}
+</div>
+</div>
     );
   };
 
