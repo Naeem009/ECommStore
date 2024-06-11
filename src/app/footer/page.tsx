@@ -1,3 +1,4 @@
+import Image from "next/image";
 import * as React from "react";
 
 export default function Footer() {
@@ -6,9 +7,10 @@ export default function Footer() {
         <div className="flex flex-col items-center self-stretch px-16 pt-16 pb-7 mt-32 w-full bg-stone-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
         <div className="flex flex-col w-full max-w-[1423px] max-md:max-w-full">
           <div className="flex gap-5 justify-between items-start text-sm capitalize max-md:flex-wrap max-md:max-w-full">
-            <img
+            <Image
               loading="lazy"
               src="j.png"
+              alt="logo"
               className="shrink-0 max-w-full aspect-[2.86] fill-stone-50 w-[200px] h-[200px]"
             />
             <div className="flex flex-col mt-1.5">
@@ -52,19 +54,22 @@ export default function Footer() {
           <div className="flex gap-5 mt-4 max-md:flex-wrap max-md:max-w-full">
             <div className="flex flex-col flex-1">
               <div className="flex gap-4 max-md:pr-5">
-                <img
+                <Image
                   loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/69b5fc3cea47fd108a85a27cbc6d5bb8cbeebc1cc145114a0264746cfed656ea?apiKey=781d23a17f6b49038d19c2f40149fbba&"
+                  src=""
+                  alt="logo1"
                   className="shrink-0 self-start w-2 aspect-[0.5]"
                 />
-                <img
+                <Image
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/2be01c717d2938b35cb201e8d2e9c13429bd23c170ccf049111fbf659ca5d17a?apiKey=781d23a17f6b49038d19c2f40149fbba&"
+                  alt="logo2"
                   className="shrink-0 my-auto aspect-[1.2] w-[18px]"
                 />
-                <img
+                <Image
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/6cafb61fc01f7b5119f98a9370b8e4c42c86918214f42070b79c0e416e05227a?apiKey=781d23a17f6b49038d19c2f40149fbba&"
+                  alt="logo3"
                   className="shrink-0 aspect-square w-[18px]"
                 />
               </div>
