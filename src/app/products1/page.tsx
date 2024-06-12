@@ -1,4 +1,4 @@
-import { Product, ProductWithBackground } from "../types/page";
+import { Product, ProductWithBackground } from "../../../types/page";
 import Image from "next/image";
 
 const ProductsPage = async () => {
