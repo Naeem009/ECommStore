@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="flex overflow-hidden relative flex-col justify-center items-end self-stretch px-16 py-16 mt-9 w-full font-bold min-h-[526px] max-md:px-5 max-md:max-w-full">
-        <Image
-          loading="lazy"
-          src="/covershirt.jpg"
-          alt="Image1"
-          layout="fill"
-          objectFit="cover"
-        />
+      <Image
+      loading="lazy"
+      src="/covershirt.jpg"
+      alt="Image1"
+      fill
+      style={{ objectFit: 'cover' }}
+       />
         <div className="flex relative flex-col px-10 py-14 mr-44 max-w-full backdrop-blur-[17px] bg-black bg-opacity-40 w-[716px] max-md:px-5 max-md:mr-2.5">
           <div className="text-5xl leading-10 text-white max-md:max-w-full max-md:text-4xl">
           <h1 className="text-[45px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-white">
