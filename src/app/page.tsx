@@ -14,22 +14,23 @@ export default function Home() {
       alt="Image1"
       fill
       style={{ objectFit: 'cover' }}
+      className="absolute inset-0 w-full h-full object-cover"
        />
-        <div className="flex relative flex-col px-10 py-14 mr-44 max-w-full backdrop-blur-[17px] bg-black bg-opacity-40 w-[716px] max-md:px-5 max-md:mr-2.5">
-          <div className="text-5xl leading-10 text-white max-md:max-w-full max-md:text-4xl">
-          <h1 className="text-[45px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-white">
-          THE BRAND OF YOUR MOOD <br/>
-        </h1>
-          </div>
-          <div className="mt-10 mr-6 text-xl leading-7 text-gray-200 max-md:mr-2.5 max-md:max-w-full">
-          Discover the essence of style and comfort with our exclusive t-shirt brand.
-          Crafted with precision from premium fabrics, our t-shirts offer a perfect blend of luxury and casual elegance.
-          Elevate your everyday wardrobe with designs that make a statement, combining modern trends with timeless appeal. Wear the best, feel the best.
-          </div>
-          <button className="justify-between items-center px-14 py-5 mt-14 text-base font-bold text-center text-white uppercase bg-stone-950 hover:bg-stone-500 hover:text-gray-300 hover:shadow-lg transition-all duration-300 rounded-lg max-md:px-5 max-md:mt-10">
-            Learn More
-          </button>
-        </div>
+        <div className="flex relative flex-col px-10 py-14 mr-44 max-w-full backdrop-blur-[17px] bg-black bg-opacity-40 w-[716px] max-md:px-5 max-md:mr-2.5 max-md:w-full max-md:py-10">
+    <div className="text-5xl leading-10 text-white max-md:max-w-full max-md:text-4xl">
+      <h1 className="text-[45px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-white max-md:text-3xl">
+        THE BRAND OF YOUR MOOD <br/>
+      </h1>
+    </div>
+    <div className="mt-10 mr-6 text-xl leading-7 text-gray-200 max-md:mr-0 max-md:max-w-full max-md:text-lg max-md:mt-5">
+      Discover the essence of style and comfort with our exclusive t-shirt brand.
+      Crafted with precision from premium fabrics, our t-shirts offer a perfect blend of luxury and casual elegance.
+      Elevate your everyday wardrobe with designs that make a statement, combining modern trends with timeless appeal. Wear the best, feel the best.
+    </div>
+        <button className="justify-between items-center px-14 py-5 mt-14 text-base font-bold text-center text-white uppercase bg-stone-950 hover:bg-stone-500 hover:text-gray-300 hover:shadow-lg transition-all duration-300 rounded-lg max-md:px-5 max-md:mt-10">
+          Learn More
+        </button>
+      </div>
       </div>
       <div className="mt-20 text-5xl font-bold leading-10 text-center text-stone-950 max-md:mt-10 max-md:text-4xl">
         Products
