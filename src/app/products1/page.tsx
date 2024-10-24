@@ -59,14 +59,13 @@ const ProductsPage = async () => {
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col items-center justify-start w-full h-full transform hover:scale-105 transition-transform duration-300">
                   <div className="flex flex-col items-center pt-0 shadow-lg bg-neutral-100 w-100 h-170">
-                    <div className="w-full h-100 overflow-hidden">
+                    <div className="flex w-full h-100 overflow-hidden">
                       <Image
                         loading="lazy"
                         src={product.image}
                         alt={product.title}
                         width={288}
                         height={256}
-                        {/*className="object-cover w-full h-full"*/}
                       />
                     </div>
                     <div className="flex flex-col px-7 py-5 mt-3 w-full bg-white max-md:px-5">
