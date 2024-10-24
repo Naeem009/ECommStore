@@ -66,7 +66,7 @@ const ProductsPage = async () => {
                         alt={product.title}
                         width={288}
                         height={256}
-                        className="object-cover w-full h-full"
+                        {/*className="object-cover w-full h-full"*/}
                       />
                     </div>
                     <div className="flex flex-col px-7 py-5 mt-3 w-full bg-white max-md:px-5">
